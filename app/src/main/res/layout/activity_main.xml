@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="10dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:text="volume down button can be use to control functionality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/et_total_dis"
+            android:hint="Distance In Meters"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:text="1600"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_total_min"
+                android:layout_width="0dp"
+                android:text="6"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Minutes" />
+
+            <EditText
+                android:id="@+id/et_total_sec"
+                android:hint="Seconds"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:text="0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="tell me status in every"/>
+            <EditText
+                android:id="@+id/et_repeat"
+                android:layout_marginHorizontal="10dp"
+                android:inputType="number"
+                android:text="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="seconds"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginHorizontal="100dp"
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tooltipText="nilesh"
+            android:text="START" />
+        <TextView
+            android:id="@+id/tv_dis_cov"
+            android:text="@string/total_distance_coverd"
+            android:layout_width="match_parent"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_dis_rem"
+            android:text="@string/total_distance_remaing"
+            android:layout_width="match_parent"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_time_taken"
+            android:text="@string/time_taken"
+            android:layout_width="match_parent"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_time_rem"
+            android:text="@string/time_remaing"
+            android:layout_width="match_parent"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="#008EFF"
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/running_result"
+            android:textSize="25sp" />
+
+        <SeekBar
+            android:layout_margin="10dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:id="@+id/volume_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Target Running</string>
+    <string name="total_distance_coverd">total distance coverd : </string>
+    <string name="total_distance_remaing">total distance remaining : </string>
+    <string name="average_speed">average speed : </string>
+    <string name="time_remaing">time remaining : </string>
+    <string name="needed_speed_for_rest_of_track">needed speed for rest of track : </string>
+    <string name="running_result">Result : </string>
+    <string name="time_taken">time taken : </string>
+</resources>
